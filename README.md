@@ -8,6 +8,7 @@ rsync -ac --delete --exclude=".*/" . /tmp/backup
 # ЗАДАНИЕ 2
 Скрипт ( --delete для полностью зеркальной копии )
 ```YAML
+#!/bin/bash
 rsync -a --delete /root /tmp/backup
 
 if [ "$?" -eq 0 ]; then
